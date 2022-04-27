@@ -1,0 +1,12 @@
+
+.image-name {
+  height: 400px;
+  /* background-color: rgb(112, 211, 241); */
+  background-color: #007ede;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
