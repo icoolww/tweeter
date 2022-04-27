@@ -68,12 +68,36 @@ $(document).ready(function() {
     </article>
       `);
   
-      console.log("$tweet", $tweet);
     return $tweet;
   };
-  
   
     renderTweets(data);
     console.log("data renderTweets", data);
 
+  // adding event listener and preventing default behaviour
+  $("form").submit( function (event){
+      event.preventDefault();
+
+      // turning form data to query string 
+      const data = $("form").serialize();
+
+      $.ajax({
+        url: "/tweets",
+        method: "POST",
+        data: data
+
+      })
+        .then((data) => {
+        })
+
+        .catch(() => {
+
+        })
+
+  });
+
+
+
+
 });
+
