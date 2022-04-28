@@ -76,6 +76,18 @@ $(document).ready(function() {
   $("form").submit( function (event){
       event.preventDefault();
 
+
+      const val = $(".button-counter > .counter").text();
+      const valNumber = Number(val);
+
+      // console.log("val", val)
+      // console.log("valNumber", valNumber)
+
+      if (valNumber < 0) {
+        alert("Hey there, your tweets are too long.");
+        return;
+      }
+
       // turning form data to query string 
       const data = $("form").serialize();
 
