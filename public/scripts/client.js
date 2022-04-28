@@ -4,31 +4,12 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
 
-// const data = [
-//   {
-//     "user": {
-//       "name": "Newton",
-//       "avatars": "https://i.imgur.com/73hZDYK.png"
-//       ,
-//       "handle": "@SirIsaac"
-//     },
-//     "content": {
-//       "text": "If I have seen further it is by standing on the shoulders of giants"
-//     },
-//     "created_at": 1461116232227
-//   },
-//   {
-//     "user": {
-//       "name": "Descartes",
-//       "avatars": "https://i.imgur.com/nlhLi3I.png",
-//       "handle": "@rd" },
-//     "content": {
-//       "text": "Je pense , donc je suis"
-//     },
-//     "created_at": 1461113959088
-//   }
-// ]
 
 $(document).ready(function() {
 
@@ -44,12 +25,12 @@ $(document).ready(function() {
   
   // creating a data template
   const createTweetElement = function (data) {
-    const name = data.user.name;
-    const avatar = data.user.avatars;
-    const handle = data.user.handle;
-    const content = data.content.text;
-    const time = data.created_at;
-    const timeAgo = timeago.format(time);
+    const name = escape(data.user.name);
+    const avatar = escape(data.user.avatars);
+    const handle = escape(data.user.handle);
+    const content = escape(data.content.text);
+    const time = escape(data.created_at);
+    const timeAgo = escape(timeago.format(time));
 
     const $tweet = $(`
     <article class="tweet-container">  
@@ -96,6 +77,7 @@ $(document).ready(function() {
         loadTweets();
         $("form")[0].reset();
       })
+      
   });
 
   const loadTweets = function () {
