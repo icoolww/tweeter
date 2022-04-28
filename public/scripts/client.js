@@ -3,7 +3,7 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
-
+// 
 const escape = function (str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
@@ -35,7 +35,7 @@ $(document).ready(function() {
     const $tweet = $(`
     <article class="tweet-container">  
         <header>
-          <span class="name"><img src="${avatar}"><span>${name}</span></span>
+          <span class="image"><img src="${avatar}"><span class="name">${name}</span></span>
           <span class="handle">${handle}</span>
         </header>
         <p for="text">${content}</p>
@@ -60,10 +60,13 @@ $(document).ready(function() {
       const val = $(".button-counter > .counter").text();
       const valNumber = Number(val);
 
-      if (valNumber < 0) {
-        alert("Hey there, your tweets are too long.");
-        return;
-      }
+      // handling overtweet 
+      $(".error").show(function(){
+        if (valNumber < 0) {
+          console.log(valNumber)
+          return this;
+        } 
+      });
 
       // turning form data to query string 
       const data = $("form").serialize();
@@ -88,10 +91,6 @@ $(document).ready(function() {
   }
 
   loadTweets();
-
-
-
-
 
 });
 

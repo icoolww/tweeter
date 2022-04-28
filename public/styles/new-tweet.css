@@ -34,11 +34,17 @@ button {
 form {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
+}
+
+.handle {
+  color: darkgrey;
+  float: right;
 }
 
 hr {
   border: 3px solid #545149;
+  margin-top: 1.5em;
 }
 
 .tweet-container {
@@ -47,13 +53,13 @@ hr {
   padding: 1em;
 }
 
-footer {
+.symbol {
   display: flex;
   justify-content: flex-end;
 }
 
-footer > .fa-solid {
-  margin: 3px;
+.symbol > .fa-solid {
+  margin: 5px;
 }
 
 .fa-flag:hover {
@@ -66,4 +72,13 @@ footer > .fa-solid {
 
 .fa-heart:hover {
   color: darkorange;
+}
+
+.error {
+  display: none;
+  color: red;
+}
+
+.name {
+  vertical-align: top;
 }

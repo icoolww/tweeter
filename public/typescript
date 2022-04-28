@@ -1,0 +1,355 @@
+Script started on Tue 26 Apr 2022 08:52:30 PM UTC
+vagrant [0;34m[[0;31mpublic[0;32m[0;34m][0m> cd scripts/
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> touch composer-char-counter.js
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> cd..
+bash: cd..: command not found
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m[0;31m>[0m cd ..
+vagrant [0;34m[[0;31mpublic[0;32m[0;34m][0m> cd ..
+vagrant [0;34m[[0;31mtweeter[0;32m[0;34m][0m> git add .
+vagrant [0;34m[[0;31mtweeter[0;32m[0;34m][0m> git commit -m "Initial Commit for Tweeter [K"
+[master 8a36ebf] Initial Commit for Tweeter
+ 9 files changed, 269 insertions(+), 22 deletions(-)
+ create mode 100644 public/scripts/composer-char-counter.js
+ create mode 100644 public/styles/header.css
+ create mode 100644 public/styles/nav.css
+ create mode 100644 public/styles/new-tweet.css
+ create mode 100644 public/typescript
+vagrant [0;34m[[0;31mtweeter[0;32m[0;34m][0m> git push origin master
+Counting objects: 16, done.
+Delta compression using up to 2 threads.
+Compressing objects:   7% (1/14)   Compressing objects:  14% (2/14)   Compressing objects:  21% (3/14)   Compressing objects:  28% (4/14)   Compressing objects:  35% (5/14)   Compressing objects:  42% (6/14)   Compressing objects:  50% (7/14)   Compressing objects:  57% (8/14)   Compressing objects:  64% (9/14)   Compressing objects:  71% (10/14)   Compressing objects:  78% (11/14)   Compressing objects:  85% (12/14)   Compressing objects:  92% (13/14)   Compressing objects: 100% (14/14)   Compressing objects: 100% (14/14), done.
+Writing objects:   6% (1/16)   Writing objects:  12% (2/16)   Writing objects:  18% (3/16)   Writing objects:  25% (4/16)   Writing objects:  31% (5/16)   Writing objects:  37% (6/16)   Writing objects:  43% (7/16)   Writing objects:  50% (8/16)   Writing objects:  56% (9/16)   Writing objects:  62% (10/16)   Writing objects:  68% (11/16)   Writing objects:  75% (12/16)   Writing objects:  81% (13/16)   Writing objects:  87% (14/16)   Writing objects:  93% (15/16)   Writing objects: 100% (16/16)   Writing objects: 100% (16/16), 3.52 KiB | 0 bytes/s, done.
+Total 16 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/4)[Kremote: Resolving deltas:  25% (1/4)[Kremote: Resolving deltas:  50% (2/4)[Kremote: Resolving deltas:  75% (3/4)[Kremote: Resolving deltas: 100% (4/4)[Kremote: Resolving deltas: 100% (4/4), completed with 4 local objects.[K
+To git@github.com:icoolww/tweeter.git
+   eecc279..8a36ebf  master -> master
+vagrant [0;34m[[0;31mtweeter[0;32m[0;34m][0m> cd ..
+vagrant [0;34m[[0;31mw4[0;32m[0;34m][0m> mkdir ajax-example.html
+vagrant [0;34m[[0;31mw4[0;32m[0;34m][0m> t[Kcd ajax-example.html/
+vagrant [0;34m[[0;31majax-example.html[0;32m[0;34m][0m> touch ajax-example.html
+vagrant [0;34m[[0;31majax-example.html[0;32m[0;34m][0m> touch ajax-example.html[Ktouch more-posts.html
+vagrant [0;34m[[0;31majax-example.html[0;32m[0;34m][0m> npm install http-server -g
+[?25l[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 41[0m[K[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 41[0m[K[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 41[0m[K[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 41[0m[K[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 41[0m[K[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 41[0m[K[[90m..................[0m] - rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 41[0m[K[[90m..................[0m] - rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 41[0m[K[[90m..................[0m] - rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 41[0m[K[[90m..................[0m] | fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m ht[0m[K[[90m..................[0m] | fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m ht[0m[K[[90m..................[0m] / fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m ht[0m[K[[90m..................[0m] - fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m ht[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m ht[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m ht[0m[K[[90m..................[0m] | fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m ht[0m[K[[90m..................[0m] - fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m ht[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m ht[0m[K[[90m..................[0m] / fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m ur[0m[K[[90m..................[0m] / fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m ur[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m ur[0m[K[[90m..................[0m] / fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m sa[0m[K[[90m..................[0m] / fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m sa[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m su[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m su[0m[K[[90m..................[0m] - fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m co[0m[K[[90m..................[0m] / fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m co[0m[K[[90m..................[0m] / fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m co[0m[K[[7m [27m[90m.................[0m] | fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m ha[0m[K[[7m [27m[90m.................[0m] / fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m ha[0m[K[[7m [27m[90m.................[0m] | fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m wh[0m[K[[7m [27m[90m.................[0m] | fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m wh[0m[K[[7m [27m[90m.................[0m] / fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m wh[0m[K[[7m [27m[90m.................[0m] | fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m ic[0m[K[[7m [27m[90m.................[0m] | fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m ic[0m[K[[7m [27m[90m.................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m sa[0m[K[[7m [27m[90m.................[0m] | fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m sa[0m[K[[7m [27m[90m.................[0m] - fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m sa[0m[K[[7m  [27m[90m................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m re[0m[K[[7m  [27m[90m................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m re[0m[K[[7m  [27m[90m................[0m] - fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m re[0m[K[[7m  [27m[90m................[0m] - fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m re[0m[K[[7m  [27m[90m................[0m] / fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m as[0m[K[[7m  [27m[90m................[0m] | fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m lo[0m[K[[7m  [27m[90m................[0m] / fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m lo[0m[K[[7m   [27m[90m...............[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m ms[0m[K[[7m   [27m[90m...............[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m qs[0m[K[[7m   [27m[90m...............[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m qs[0m[K[[7m   [27m[90m...............[0m] - fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m si[0m[K[[7m   [27m[90m...............[0m] - fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m si[0m[K[[7m   [27m[90m...............[0m] \ loadDep:get-intrinsic: [7msill[0m [35mresolveWithNewM[0m[K[[7m   [27m[90m...............[0m] \ loadDep:get-intrinsic: [7msill[0m [35mresolveWithNewM[0m[K[[7m   [27m[90m...............[0m] - fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m fu[0m[K[[7m   [27m[90m...............[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m fu[0m[K[[7m       [27m[90m...........[0m] / diffTrees: [7msill[0m [35minstall[0m generateActionsToTa[0m[K[[7m       [27m[90m...........[0m] / extract:http-server: [34;40mverb[0m [35mlock[0m using /home/[0m[K[[7m       [27m[90m...........[0m] - extract:http-server: [34;40mverb[0m [35mlock[0m using /home/[0m[K[[7m       [27m[90m...........[0m] - extract:http-server: [34;40mverb[0m [35mlock[0m using /home/[0m[K[[7m       [27m[90m...........[0m] - extract:http-server: [34;40mverb[0m [35mlock[0m using /home/[0m[K[[7m       [27m[90m...........[0m] - extract:http-server: [34;40mverb[0m [35mlock[0m using /home/[0m[K[[7m       [27m[90m...........[0m] - extract:color-name: [7msill[0m [35mextract[0m color-name[0m[K[[7m           [27m[90m.......[0m] | extract:he: [7msill[0m [35mextract[0m has-symbols@^1.0.1[0m[K[[7m           [27m[90m.......[0m] / extract:object-inspect: [7msill[0m [35mextract[0m object[0m[K[[7m            [27m[90m......[0m] \ extract:iconv-lite: [7msill[0m [35mextract[0m iconv-lite[0m[K[[7m            [27m[90m......[0m] \ extract:iconv-lite: [7msill[0m [35mextract[0m iconv-lite[0m[K[[7m            [27m[90m......[0m] | extract:async: [7msill[0m [35mextract[0m async@^2.6.2 ex[0m[K[[7m            [27m[90m......[0m] | extract:async: [7msill[0m [35mextract[0m async@^2.6.2 ex[0m[K[[7m            [27m[90m......[0m] | extract:async: [7msill[0m [35mextract[0m async@^2.6.2 ex[0m[K[[7m            [27m[90m......[0m] | extract:async: [7msill[0m [35mextract[0m async@^2.6.2 ex[0m[K[[7m            [27m[90m......[0m] | extract:async: [7msill[0m [35mextract[0m async@^2.6.2 ex[0m[K[[7m            [27m[90m......[0m] | extract:async: [7msill[0m [35mextract[0m async@^2.6.2 ex[0m[K[[7m            [27m[90m......[0m] | extract:async: [7msill[0m [35mextract[0m async@^2.6.2 ex[0m[K[[7m            [27m[90m......[0m] \ finalize:http-server: [7msill[0m [35mdoSerial[0m finaliz[0m[K[[7m            [27m[90m......[0m] - finalize:basic-auth: [7msill[0m [35mfinalize[0m /home/va[0m[K[[7m            [27m[90m......[0m] - refresh-package-json:http-server: [32;40mtiming[0m [35mac[0m[K[[7m            [27m[90m......[0m] - refresh-package-json:http-server: [32;40mtiming[0m [35mac[0m[K[[7m            [27m[90m......[0m] - preinstall:http-server: [32;40mtiming[0m [35maction:refre[0m[K[K[?25h/home/vagrant/.nvm/versions/node/v12.22.11/bin/http-server -> /home/vagrant/.nvm/versions/node/v12.22.11/lib/node_modules/http-server/bin/http-server
+[?25l[[7m            [27m[90m......[0m] / build:url-join: [7msill[0m [35mgently link[0m link does[0m[K[K[?25h+ http-server@14.1.0
+added 39 packages from 43 contributors in 4.19s
+
+[33m[39m
+[33m   ╭───────────────────────────────────────────────────────────────╮[39m
+   [33m│[39m                                                               [33m│[39m
+   [33m│[39m      New [31mmajor[39m version of npm available! [31m6.14.16[39m → [32m8.7.0[39m      [33m│[39m
+   [33m│[39m   [33mChangelog:[39m [36mhttps://github.com/npm/cli/releases/tag/v8.7.0[39m   [33m│[39m
+   [33m│[39m               Run [32mnpm install -g npm[39m to update!               [33m│[39m
+   [33m│[39m                                                               [33m│[39m
+[33m   ╰───────────────────────────────────────────────────────────────╯[39m
+[33m[39m
+vagrant [0;34m[[0;31majax-example.html[0;32m[0;34m][0m> http-server
+[33mStarting up http-server, serving [39m[36m./[39m
+[33m[39m
+[33mhttp-server version: [39m[36m14.1.0[39m
+[33m[39m
+[33mhttp-server settings: [39m
+[33mCORS: [39m[31mdisabled[39m
+[33mCache: [39m[36m3600 seconds[39m
+[33mConnection Timeout: [39m[36m120 seconds[39m
+[33mDirectory Listings: [39m[36mvisible[39m
+[33mAutoIndex: [39m[36mvisible[39m
+[33mServe GZIP Files: [39m[31mfalse[39m
+[33mServe Brotli Files: [39m[31mfalse[39m
+[33mDefault File Extension: [39m[31mnone[39m
+[33m[39m
+[33mAvailable on:[39m
+  http://127.0.0.1:[32m8081[39m
+  http://10.0.2.15:[32m8081[39m
+Hit CTRL-C to stop the server
+
+^C[31mhttp-server stopped.[39m
+vagrant [0;34m[[0;31majax-example.html[0;32m[0;34m][0m> http-server
+[33mStarting up http-server, serving [39m[36m./[39m
+[33m[39m
+[33mhttp-server version: [39m[36m14.1.0[39m
+[33m[39m
+[33mhttp-server settings: [39m
+[33mCORS: [39m[31mdisabled[39m
+[33mCache: [39m[36m3600 seconds[39m
+[33mConnection Timeout: [39m[36m120 seconds[39m
+[33mDirectory Listings: [39m[36mvisible[39m
+[33mAutoIndex: [39m[36mvisible[39m
+[33mServe GZIP Files: [39m[31mfalse[39m
+[33mServe Brotli Files: [39m[31mfalse[39m
+[33mDefault File Extension: [39m[31mnone[39m
+[33m[39m
+[33mAvailable on:[39m
+  http://127.0.0.1:[32m8080[39m
+  http://10.0.2.15:[32m8080[39m
+Hit CTRL-C to stop the server
+
+[2022-04-27T04:06:10.832Z]  "[36mGET[39m [36m/ajax-example.html[39m" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36"
+(node:7092) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated
+[2022-04-27T04:06:12.911Z]  "[36mGET[39m [36m/ajax-example.html[39m" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36"
+[2022-04-27T04:06:16.367Z]  "[36mGET[39m [36m/more-posts.html[39m" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36"
+[2022-04-27T04:06:19.786Z]  "[36mGET[39m [36m/ajax-example.html[39m" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36"
+[2022-04-27T04:09:18.799Z]  "[36mGET[39m [36m/ajax-example.html[39m" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36"
+^C[31mhttp-server stopped.[39m
+vagrant [0;34m[[0;31majax-example.html[0;32m[0;34m][0m> cd ..
+vagrant [0;34m[[0;31mw4[0;32m[0;34m][0m> git clone git@gist.github.com:f8481ce476ffc850880738a 184ffaca8.git
+Cloning into 'f8481ce476ffc850880738a184ffaca8'...
+remote: Enumerating objects: 16, done.[K
+remote: Total 16 (delta 0), reused 0 (delta 0), pack-reused 16[K
+Receiving objects:   6% (1/16)   Receiving objects:  12% (2/16)   Receiving objects:  18% (3/16)   Receiving objects:  25% (4/16)   Receiving objects:  31% (5/16)   Receiving objects:  37% (6/16)   Receiving objects:  43% (7/16)   Receiving objects:  50% (8/16)   Receiving objects:  56% (9/16)   Receiving objects:  62% (10/16)   Receiving objects:  68% (11/16)   Receiving objects:  75% (12/16)   Receiving objects:  81% (13/16)   Receiving objects:  87% (14/16)   Receiving objects:  93% (15/16)   Receiving objects: 100% (16/16)   Receiving objects: 100% (16/16), done.
+Resolving deltas:   0% (0/3)   Resolving deltas: 100% (3/3)   Resolving deltas: 100% (3/3), done.
+Checking connectivity... done.
+vagrant [0;34m[[0;31mw4[0;32m[0;34m][0m> cd w4
+bash: cd: w4: No such file or directory
+vagrant [0;34m[[0;31mw4[0;32m[0;34m][0m[0;31m>[0m cd tweeter/
+vagrant [0;34m[[0;31mtweeter[0;32m[0;34m][0m> eslint clie[K[K[K[K[K[K[K[K[K[K[Kcd public/
+vagrant [0;34m[[0;31mpublic[0;32m[0;34m][0m> cd scripts/
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> eslint client.js 
+[0m[0m
+[0m[4m/vagrant/w4/tweeter/public/scripts/client.js[24m[0m
+[0m   [2m8:7[22m   [33mwarning[39m  'createTweetElement' is assigned a value but never used  [2mno-unused-vars[22m[0m
+[0m   [2m8:36[22m  [33mwarning[39m  Unexpected space before function parentheses             [2mspace-before-function-paren[22m[0m
+[0m   [2m9:9[22m   [33mwarning[39m  'name' is assigned a value but never used                [2mno-unused-vars[22m[0m
+[0m  [2m10:9[22m   [33mwarning[39m  'avatar' is assigned a value but never used              [2mno-unused-vars[22m[0m
+[0m  [2m11:9[22m   [33mwarning[39m  'handle' is assigned a value but never used              [2mno-unused-vars[22m[0m
+[0m  [2m12:9[22m   [33mwarning[39m  'content' is assigned a value but never used             [2mno-unused-vars[22m[0m
+[0m  [2m13:9[22m   [33mwarning[39m  'time' is assigned a value but never used                [2mno-unused-vars[22m[0m
+[0m  [2m16:2[22m   [31merror[39m    Missing semicolon                                        [2msemi[22m[0m
+[0m[0m
+[0m[31m[1m✖ 8 problems (1 error, 7 warnings)[22m[39m[0m
+[0m[31m[1m[22m[39m[31m[1m  1 error and 1 warning potentially fixable with the `--fix` option.[22m[39m[0m
+[0m[31m[1m[22m[39m[0m
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m[0;31m>[0m eslint client.js --fix
+[0m[0m
+[0m[4m/vagrant/w4/tweeter/public/scripts/client.js[24m[0m
+[0m   [2m8:7[22m  [33mwarning[39m  'createTweetElement' is assigned a value but never used  [2mno-unused-vars[22m[0m
+[0m   [2m9:9[22m  [33mwarning[39m  'name' is assigned a value but never used                [2mno-unused-vars[22m[0m
+[0m  [2m10:9[22m  [33mwarning[39m  'avatar' is assigned a value but never used              [2mno-unused-vars[22m[0m
+[0m  [2m11:9[22m  [33mwarning[39m  'handle' is assigned a value but never used              [2mno-unused-vars[22m[0m
+[0m  [2m12:9[22m  [33mwarning[39m  'content' is assigned a value but never used             [2mno-unused-vars[22m[0m
+[0m  [2m13:9[22m  [33mwarning[39m  'time' is assigned a value but never used                [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[33m[1m✖ 6 problems (0 errors, 6 warnings)[22m[39m[0m
+[0m[33m[1m[22m[39m[0m
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> eslint client.js --fix
+[0m[0m
+[0m[4m/vagrant/w4/tweeter/public/scripts/client.js[24m[0m
+[0m   [2m8:7[22m  [33mwarning[39m  'createTweetElement' is assigned a value but never used  [2mno-unused-vars[22m[0m
+[0m   [2m9:9[22m  [33mwarning[39m  'name' is assigned a value but never used                [2mno-unused-vars[22m[0m
+[0m  [2m10:9[22m  [33mwarning[39m  'avatar' is assigned a value but never used              [2mno-unused-vars[22m[0m
+[0m  [2m11:9[22m  [33mwarning[39m  'handle' is assigned a value but never used              [2mno-unused-vars[22m[0m
+[0m  [2m12:9[22m  [33mwarning[39m  'content' is assigned a value but never used             [2mno-unused-vars[22m[0m
+[0m  [2m13:9[22m  [33mwarning[39m  'time' is assigned a value but never used                [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[33m[1m✖ 6 problems (0 errors, 6 warnings)[22m[39m[0m
+[0m[33m[1m[22m[39m[0m
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> git add client.js 
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> git commit -m "adding template[C[C[C[Ctemplatewtemplateetemplateetemplate[Ctemplatestemplate template[C[C[C[C[C[C[C[C and elemen t"
+[master 81f2e1f] adding tweets template and element
+ 1 file changed, 33 insertions(+)
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> git push origin master
+Counting objects: 5, done.
+Delta compression using up to 2 threads.
+Compressing objects:  20% (1/5)   Compressing objects:  40% (2/5)   Compressing objects:  60% (3/5)   Compressing objects:  80% (4/5)   Compressing objects: 100% (5/5)   Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 869 bytes | 0 bytes/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To git@github.com:icoolww/tweeter.git
+   8a36ebf..81f2e1f  master -> master
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> cd ..
+vagrant [0;34m[[0;31mpublic[0;32m[0;34m][0m> cd ..
+vagrant [0;34m[[0;31mtweeter[0;32m[0;34m][0m> node in[K[K[K[K[K[K[Kcd public/
+vagrant [0;34m[[0;31mpublic[0;32m[0;34m][0m> git add index.html 
+vagrant [0;34m[[0;31mpublic[0;32m[0;34m][0m> git commit -m "emptying out container"tcontainer"wcontainer"econtainer"[1Pcontainer"econtainer"econtainer"tcontainer" container"[1Pcontainer"-container"
+[master 9017b32] emptying out tweet-container
+ 1 file changed, 4 insertions(+), 11 deletions(-)
+vagrant [0;34m[[0;31mpublic[0;32m[0;34m][0m> git push origin master
+Counting objects: 4, done.
+Delta compression using up to 2 threads.
+Compressing objects:  25% (1/4)   Compressing objects:  50% (2/4)   Compressing objects:  75% (3/4)   Compressing objects: 100% (4/4)   Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)   Writing objects:  50% (2/4)   Writing objects:  75% (3/4)   Writing objects: 100% (4/4)   Writing objects: 100% (4/4), 437 bytes | 0 bytes/s, done.
+Total 4 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To git@github.com:icoolww/tweeter.git
+   81f2e1f..9017b32  master -> master
+vagrant [0;34m[[0;31mpublic[0;32m[0;34m][0m> git push origin mastercommit -m "emptying out tweet-container"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Padd index.html [9Pcd public/..[Kgit push origin mastercommit -m "adding tweets template and element""[Avagrant [0;34m[[0;31mpublic[0;32m[0;34m][0m> [C[C[C[Cadd client.js [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommit -m "adding tweets template and element""[Avagrant [0;34m[[0;31mpublic[0;32m[0;34m][0m> [C[C[C[C[27Ppush origin master
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ..[Kpublic/git add index.html commit -m "emptying out tweet-container"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[22Ppush origin master[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kcd scripts/
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> gti a[K[K[K[K[Kgit add client.js 
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> git add client.js [7Pcd scripts/git push origin mastercommit -m "emptying out tweet-container"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Padd index.html [9Pcd public/..[Kgit push origin mastercommit -m "adding tweets template and elementt"[Avagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> [C[C[C[Cadd client.js [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommit -m "adding tweets template and elementt"
+[master d665d36] adding tweets template and element
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> git commit -m "adding tweets template and elementt"[Avagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> [C[C[C[Cadd client.js [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Pcd scripts/git push origin master
+Counting objects: 5, done.
+Delta compression using up to 2 threads.
+Compressing objects:  20% (1/5)   Compressing objects:  40% (2/5)   Compressing objects:  60% (3/5)   Compressing objects:  80% (4/5)   Compressing objects: 100% (5/5)   Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 485 bytes | 0 bytes/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To git@github.com:icoolww/tweeter.git
+   9017b32..d665d36  master -> master
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> cd ..
+vagrant [0;34m[[0;31mpublic[0;32m[0;34m][0m> cd ..
+vagrant [0;34m[[0;31mtweeter[0;32m[0;34m][0m> cd public/
+vagrant [0;34m[[0;31mpublic[0;32m[0;34m][0m> cd rt[K[Ktwe[K[K[Kscripts/
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> cd scripts/[1Ppublic/..[Kgit push origin mastercommit -m "adding tweets template and elementt"[Avagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> [C[C[C[Cadd client.js [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommit -m "adding tweets template and elementt"[Avagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> [C[C[C[Cadd client.js [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> git add client.js [7Pcd scripts/git add client.js [Kgit add client.js [7Pcd scripts/[1Ppublic/..[Kgit push origin mastercommit -m "adding tweets template and elementt"
+[master e6e4ad2] adding tweets template and element
+ 1 file changed, 64 insertions(+), 24 deletions(-)
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> git commit -m "adding tweets template and elementt"[Avagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> [C[C[C[Cadd client.js [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Pcd scripts/git add client.js commit -m "adding tweets template and elementt"[Avagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit commit -m "adding tweets template and elementt"[Avagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> [C[C[C[Cadd client.js [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Pcd scripts/[1Ppublic/..[Kgit push origin master
+Counting objects: 5, done.
+Delta compression using up to 2 threads.
+Compressing objects:  20% (1/5)   Compressing objects:  40% (2/5)   Compressing objects:  60% (3/5)   Compressing objects:  80% (4/5)   Compressing objects: 100% (5/5)   Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 1.15 KiB | 0 bytes/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To git@github.com:icoolww/tweeter.git
+   d665d36..e6e4ad2  master -> master
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> git add index.html
+fatal: pathspec 'index.html' did not match any files
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m[0;31m>[0m cd ..
+vagrant [0;34m[[0;31mpublic[0;32m[0;34m][0m> cd .
+vagrant [0;34m[[0;31mpublic[0;32m[0;34m][0m> cd ..
+vagrant [0;34m[[0;31mtweeter[0;32m[0;34m][0m> cd server/
+vagrant [0;34m[[0;31mserver[0;32m[0;34m][0m> git add index.html
+fatal: pathspec 'index.html' did not match any files
+vagrant [0;34m[[0;31mserver[0;32m[0;34m][0m[0;31m>[0m cd ..
+vagrant [0;34m[[0;31mtweeter[0;32m[0;34m][0m> cd public/
+vagrant [0;34m[[0;31mpublic[0;32m[0;34m][0m> git add index.html
+vagrant [0;34m[[0;31mpublic[0;32m[0;34m][0m> git commit -m "dele[K[K[K[KDeleting [K[K[K[K[K[K[K[K[KRemoving [K[K[K[K[K[K[K[K[KEmptying Out Contraoner[K[K[K[K[K[K[Ka[Ktan[Kiner"
+[master 86ff021] Emptying Out Container
+ 1 file changed, 2 insertions(+), 13 deletions(-)
+vagrant [0;34m[[0;31mpublic[0;32m[0;34m][0m> git push ro[K[Korigin master
+Counting objects: 4, done.
+Delta compression using up to 2 threads.
+Compressing objects:  25% (1/4)   Compressing objects:  50% (2/4)   Compressing objects:  75% (3/4)   Compressing objects: 100% (4/4)   Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)   Writing objects:  50% (2/4)   Writing objects:  75% (3/4)   Writing objects: 100% (4/4)   Writing objects: 100% (4/4), 370 bytes | 0 bytes/s, done.
+Total 4 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To git@github.com:icoolww/tweeter.git
+   e6e4ad2..86ff021  master -> master
+vagrant [0;34m[[0;31mpublic[0;32m[0;34m][0m> git add index.html 
+vagrant [0;34m[[0;31mpublic[0;32m[0;34m][0m> git commit -m "F[KAdding Event [K[K[K[K[K[Kevent lister[Kner and preventi ng defa[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K, query strin g"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+	[31mmodified:   scripts/client.js[m
+	[31mmodified:   styles/nav.css[m
+	[31mmodified:   styles/new-tweet.css[m
+	[31mmodified:   typescript[m
+	[31mmodified:   ../server/data-files/initial-tweets.json[m
+
+no changes added to commit
+vagrant [0;34m[[0;31mpublic[0;32m[0;34m][0m[0;31m>[0m git push origin master
+Everything up-to-date
+vagrant [0;34m[[0;31mpublic[0;32m[0;34m][0m> git push origin mastercommit -m "Adding event listener, query stringg"[Avagrant [0;34m[[0;31mpublic[0;32m[0;34m][0m> [C[C[C[C[30Padd index.html 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd scripts/
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> git add clients.js[K[K[K[K.js
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> git commit -m "Adding event lister[Kner and [K[K[K[K[K, query stri ng"
+[master e11393e] Adding event listener, query string
+ 1 file changed, 26 insertions(+), 2 deletions(-)
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> git commit -m "Adding event listener, query strinng"[Avagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> [C[C[C[Cadd client.js[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6Pcd scripts/git push origin master
+Counting objects: 5, done.
+Delta compression using up to 2 threads.
+Compressing objects:  20% (1/5)   Compressing objects:  40% (2/5)   Compressing objects:  60% (3/5)   Compressing objects:  80% (4/5)   Compressing objects: 100% (5/5)   Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 708 bytes | 0 bytes/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To git@github.com:icoolww/tweeter.git
+   86ff021..e11393e  master -> master
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> git push origin mastercommit -m "Adding event listener, query strinng"[Avagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> [C[C[C[C[26Ppush origin master
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommit -m "Adding event listener, query strinng"[Avagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> [C[C[C[Cadd client.js[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> git commit -m "Adding[K[K[K[K[Kjax with quer[K[K[K[KQer[K[Kuery, [K[K, T[Ktimn[KeAgo[C[C[1@A[1@d[1@d[1@i[1@n[1@g[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C"
+[master 9a1d433] Adding Ajax with Query, timeAgo
+ 1 file changed, 38 insertions(+), 37 deletions(-)
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> git commit -m "Adding Ajax with Query, timeAgo"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd client.js[Kpush origin mastercommit -m "Adding event listener, query strinng"[Avagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> [C[C[C[C[26Ppush origin master
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Counting objects: 5, done.
+Delta compression using up to 2 threads.
+Compressing objects:  20% (1/5)   Compressing objects:  40% (2/5)   Compressing objects:  60% (3/5)   Compressing objects:  80% (4/5)   Compressing objects: 100% (5/5)   Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 806 bytes | 0 bytes/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To git@github.com:icoolww/tweeter.git
+   e11393e..9a1d433  master -> master
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> cd ..
+vagrant [0;34m[[0;31mpublic[0;32m[0;34m][0m> cd git add index.html [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit add index.html 
+vagrant [0;34m[[0;31mpublic[0;32m[0;34m][0m> git add index.html cd ..[Kgit push origin mastercommit -m "Adding Ajax with Query, timeAgo"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K [K[Kg timeAgo script"
+[master 45f29c3] Adding timeAgo script
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+vagrant [0;34m[[0;31mpublic[0;32m[0;34m][0m> git commit -m "Adding timeAgo script"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18Padd index.html cd ..[Kgit push origin master
+Counting objects: 4, done.
+Delta compression using up to 2 threads.
+Compressing objects:  25% (1/4)   Compressing objects:  50% (2/4)   Compressing objects:  75% (3/4)   Compressing objects: 100% (4/4)   Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)   Writing objects:  50% (2/4)   Writing objects:  75% (3/4)   Writing objects: 100% (4/4)   Writing objects: 100% (4/4), 417 bytes | 0 bytes/s, done.
+Total 4 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To git@github.com:icoolww/tweeter.git
+   9a1d433..45f29c3  master -> master
+vagrant [0;34m[[0;31mpublic[0;32m[0;34m][0m> cd ..
+vagrant [0;34m[[0;31mtweeter[0;32m[0;34m][0m> git add clie[K[K[K[K[K[K[K[K[K[K[K[Kcd public/
+vagrant [0;34m[[0;31mpublic[0;32m[0;34m][0m> git add clie[K[K[K[K[K[K[K[K[K[K[K[Kcd scripts/
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> i[Kgit add client.js 
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> gti [K[K[Kit commit -m "Providinf[K[Kng alert function"
+[master 97493e2] Providing alert function
+ 1 file changed, 12 insertions(+)
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> git push ot[Krigin master
+Counting objects: 5, done.
+Delta compression using up to 2 threads.
+Compressing objects:  20% (1/5)   Compressing objects:  40% (2/5)   Compressing objects:  60% (3/5)   Compressing objects:  80% (4/5)   Compressing objects: 100% (5/5)   Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 625 bytes | 0 bytes/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To git@github.com:icoolww/tweeter.git
+   45f29c3..97493e2  master -> master
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> git add client.js 
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> git commit "Prepending [K, submit [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ka[KAdding resr[Ket, ref[K[K[K[K wi[K[K[Ke[K feature to refre[K[K[K[K[K[K[Ko [K[K[K[K[K[K[K[K[K[K[K[K without refersh page"
+error: pathspec 'Adding reset, without refersh page' did not match any file(s) known to git.
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m[0;31m>[0m git commit "Adding reset, without refersh page"[1P[1@i[C "Adding reset, without refersh page" [Avagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m[0;31m>[0m [C[C[C[C[C[C[C[C[C[C[C_ "Adding reset, without refersh page""[Avagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m[0;31m>[0m [C[C[C[C[C[C[C[C[C[C[C[C "Adding reset, without refersh page" [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C- "Adding reset, without refersh page""[Avagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m[0;31m>[0m [C[C[C[C[C[C[C[C[C[C[C[Cm "Adding reset, without refersh page"[Avagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m[0;31m>[0m [C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[master a827092] Adding reset, without refersh page
+ 1 file changed, 8 insertions(+), 9 deletions(-)
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> git push origin master
+Counting objects: 5, done.
+Delta compression using up to 2 threads.
+Compressing objects:  20% (1/5)   Compressing objects:  40% (2/5)   Compressing objects:  60% (3/5)   Compressing objects:  80% (4/5)   Compressing objects: 100% (5/5)   Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 569 bytes | 0 bytes/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To git@github.com:icoolww/tweeter.git
+   97493e2..a827092  master -> master
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> git add .
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> g[Kgit add .push origin mastercommit -m "Adding reset, without refersh pagee"
+[master def309f] Adding reset, without refersh page
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> git commit -m "Adding reset, without refersh pagee"[Avagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> [C[C[C[Cadd .[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpush origin mastercommit -m "Adding reset, without refersh pagee"[Avagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> [C[C[C[C[26Ppush origin master
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Counting objects: 5, done.
+Delta compression using up to 2 threads.
+Compressing objects:  20% (1/5)   Compressing objects:  40% (2/5)   Compressing objects:  60% (3/5)   Compressing objects:  80% (4/5)   Compressing objects: 100% (5/5)   Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 491 bytes | 0 bytes/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To git@github.com:icoolww/tweeter.git
+   a827092..def309f  master -> master
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> git add client.js 
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> git commit -m " [Kew[K[KEscape handling"
+[master 255d52d] Escape handling
+ 1 file changed, 12 insertions(+), 30 deletions(-)
+vagrant [0;34m[[0;31mscripts[0;32m[0;34m][0m> git push origin master
+Counting objects: 5, done.
+Delta compression using up to 2 threads.
+Compressing objects:  20% (1/5)   Compressing objects:  40% (2/5)   Compressing objects:  60% (3/5)   Compressing objects:  80% (4/5)   Compressing objects: 100% (5/5)   Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 684 bytes | 0 bytes/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving delt
