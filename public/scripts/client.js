@@ -35,9 +35,9 @@ $(document).ready(function() {
   // creating tweet element by using template
   const renderTweets = function (datas) {
     for (let data of datas) {
-      console.log(data)
+      // console.log(data)
       let $tweet = createTweetElement(data);
-      $("#tweets-container").append($tweet);
+      $("#tweets-container").prepend($tweet);
     }
   };
   
@@ -76,12 +76,8 @@ $(document).ready(function() {
   $("form").submit( function (event){
       event.preventDefault();
 
-
       const val = $(".button-counter > .counter").text();
       const valNumber = Number(val);
-
-      // console.log("val", val)
-      // console.log("valNumber", valNumber)
 
       if (valNumber < 0) {
         alert("Hey there, your tweets are too long.");
@@ -90,15 +86,16 @@ $(document).ready(function() {
 
       // turning form data to query string 
       const data = $("form").serialize();
+      console.log("data", data)
 
       $.ajax({
         url: "/tweets",
         method: "POST",
         data: data
+      }).then((result) => {
+        loadTweets();
+        $("form")[0].reset();
       })
-        .then((result) => {
-          renderTweets(result);
-        })
   });
 
   const loadTweets = function () {
@@ -109,6 +106,8 @@ $(document).ready(function() {
   }
 
   loadTweets();
+
+
 
 
 
