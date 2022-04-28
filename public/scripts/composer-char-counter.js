@@ -4,7 +4,7 @@ $(document).ready(function() {
 
   const texareaLimit = 140;
 
-  $("textarea").change(function() {
+  $("textarea").bind('input', function(){
     const textareaLength = $(this).val().length;
     const counterElement = $(this).siblings('.button-counter').find('.counter');
     const counter = texareaLimit - textareaLength;
