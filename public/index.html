@@ -42,6 +42,7 @@
     <header class="image-name">
       <div>
           <img src="/images/profile-hex.png"> 
+          
       </div>
       <br>
       <div>
@@ -52,21 +53,18 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <!-- <h2>Compose Tweet</h2> -->
         
         <form method="POST" action="/tweets/">
           <span class="error1"><i class="fa-solid fa-triangle-exclamation">Seriously !? your tweets are way too long</i>
             <i class="fa-solid fa-triangle-exclamation"></i></span>
             <span class="error2"><i class="fa-solid fa-triangle-exclamation">Come on !? put some letters on it</i>
               <i class="fa-solid fa-triangle-exclamation"></i></span>
-          <!-- <div class="tweet-container"> -->
             <label for="tweet-text">What are you humming about?</label>
             <textarea name="text" id="tweet-text"></textarea>
             <div class="button-counter">
               <button type="submit">Tweet</button>
               <output name="counter" class="counter" for="tweet-text">140</output>
             </div>
-          <!-- </div> -->
         </form>
       </section>
       <section id="tweets-container">
