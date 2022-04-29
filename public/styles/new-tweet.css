@@ -74,7 +74,12 @@ hr {
   color: darkorange;
 }
 
-.error {
+.error1 {
+  display: none;
+  color: red;
+}
+
+.error2 {
   display: none;
   color: red;
 }
@@ -82,3 +87,22 @@ hr {
 .name {
   vertical-align: top;
 }
+
+footer {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ /* breakpoint for tablets min 768px and max 1024 */
+@media only screen and (min-width: 768px) {
+  .header-body {
+    display: flex;
+    flex-direction: row;
+  }
+  /* .overlay {
+    background-color: #007ede;
+  } */
+}
+
+

@@ -3,6 +3,7 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
@@ -37,13 +38,14 @@
         <i class="fa-solid fa-angles-down"></i>
       </div>  
     </nav>
+    <div class="header-body">
     <header class="image-name">
       <div>
           <img src="/images/profile-hex.png"> 
       </div>
       <br>
       <div>
-          <h2>Test Test 123</h2>
+          <h2>Dominic Toretto</h2>
       </div> 
   </header>
 
@@ -53,8 +55,10 @@
         <!-- <h2>Compose Tweet</h2> -->
         
         <form method="POST" action="/tweets/">
-          <span class="error"><i class="fa-solid fa-triangle-exclamation">Seriously !? your tweets are way too long</i>
+          <span class="error1"><i class="fa-solid fa-triangle-exclamation">Seriously !? your tweets are way too long</i>
             <i class="fa-solid fa-triangle-exclamation"></i></span>
+            <span class="error2"><i class="fa-solid fa-triangle-exclamation">Come on !? put some letters on it</i>
+              <i class="fa-solid fa-triangle-exclamation"></i></span>
           <!-- <div class="tweet-container"> -->
             <label for="tweet-text">What are you humming about?</label>
             <textarea name="text" id="tweet-text"></textarea>
@@ -69,4 +73,5 @@
       </section>
     </main>
   </body>
+</div>
 </html>

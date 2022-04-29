@@ -41,12 +41,12 @@ $(document).ready(function() {
         <p for="text">${content}</p>
         <hr />
         <footer>
-        <span>${timeAgo}</span>
-          <span class="symbol">
-            <i class="fa-solid fa-flag"></i>
-            <i class="fa-solid fa-retweet"></i>
-            <i class="fa-solid fa-heart"></i>
-          </span>
+        <div>${timeAgo}</div>
+        <div class="symbol">
+          <i class="fa-solid fa-flag"></i>
+          <i class="fa-solid fa-retweet"></i>
+          <i class="fa-solid fa-heart"></i>
+        </div>
         </footer>
     </article>
       `);
@@ -60,17 +60,23 @@ $(document).ready(function() {
       const val = $(".button-counter > .counter").text();
       const valNumber = Number(val);
 
-      // handling overtweet 
-      $(".error").show(function(){
-        if (valNumber < 0) {
-          console.log(valNumber)
-          return this;
-        } 
-      });
+      // hiding error 1,error2 messages
+      $(".error1").hide()
+      $(".error2").hide()
+
+      if (valNumber >= 140) {
+        // handling empty tweet
+        $(".error2").show();
+        return;
+      } else if (valNumber < 0) {
+        // handling overtweet 
+        $(".error1").show();
+        return;
+      }
+  
 
       // turning form data to query string 
       const data = $("form").serialize();
-      console.log("data", data)
 
       $.ajax({
         url: "/tweets",
@@ -91,6 +97,8 @@ $(document).ready(function() {
   }
 
   loadTweets();
+
+
 
 });
 
