@@ -54,6 +54,11 @@ hr {
   padding: 1em;
   line-break: auto;
   overflow: auto;
+  overflow-wrap: break-word;
+}
+
+.tweet-container:hover {
+  box-shadow: 0 0 4px black;
 }
 
 .text {
@@ -69,24 +74,11 @@ hr {
   margin: 5px;
 }
 
-.fa-flag:hover {
+.fa-flag:hover, .fa-retweet:hover, .fa-heart:hover {
   color: darkorange;
 }
 
-.fa-retweet:hover {
-  color: darkorange;
-}
-
-.fa-heart:hover {
-  color: darkorange;
-}
-
-.error1 {
-  display: none;
-  color: red;
-}
-
-.error2 {
+.error1, .error2 {
   display: none;
   color: red;
 }
@@ -101,25 +93,23 @@ footer {
   align-items: center;
 }
 
- /* breakpoint for tablets min 768px and max 1024 */
+/* breakpoint for tablets min 768px and max 1024 */
 @media only screen and (min-width: 768px) {
   .header-body {
     display: flex;
     flex-direction: row;
   }
+  .image-name {
+    margin-top: 5%;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
 }
 
-  
-  @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .overlay {
-  background-color: #007ede;
-  background-image: unset; 
-  margin: unset;
-  }
-
-  .image-name{
+    background-color: #007ede;
+    background-image: unset; 
     margin: unset;
   }
-
-
 }

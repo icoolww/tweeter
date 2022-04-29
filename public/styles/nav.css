@@ -13,7 +13,6 @@ html {
   box-sizing: inherit;
 }
 
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -40,7 +39,6 @@ nav > span {
   justify-content: center;
   align-items: center;
 }
-
 
 .overlay {
   z-index: 1;
