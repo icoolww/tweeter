@@ -3,8 +3,8 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
-// 
-const escape = function (str) {
+//
+const escape = function(str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
@@ -14,9 +14,8 @@ const escape = function (str) {
 $(document).ready(function() {
 
   // creating tweet element by using template
-  const renderTweets = function (datas) {
+  const renderTweets = function(datas) {
     for (let data of datas) {
-      // console.log(data)
       let $tweet = createTweetElement(data);
       $("#tweets-container").prepend($tweet);
     }
@@ -24,7 +23,7 @@ $(document).ready(function() {
   
   
   // creating a data template
-  const createTweetElement = function (data) {
+  const createTweetElement = function(data) {
     const name = escape(data.user.name);
     const avatar = escape(data.user.avatars);
     const handle = escape(data.user.handle);
@@ -53,52 +52,49 @@ $(document).ready(function() {
     return $tweet;
   };
   
+
   // adding event listener and preventing default behaviour
-  $("form").submit( function (event){
-      event.preventDefault();
+  $("form").submit(function(event) {
+    event.preventDefault();
 
-      const val = $(".button-counter > .counter").text();
-      const valNumber = Number(val);
+    const val = $(".button-counter > .counter").text();
+    const valNumber = Number(val);
 
-      // hiding error 1,error2 messages
-      $(".error1").hide()
-      $(".error2").hide()
+    // hiding error 1, error2 messages
+    $(".error1").hide();
+    $(".error2").hide();
 
-      if (valNumber >= 140) {
-        // handling empty tweet
-        $(".error2").show();
-        return;
-      } else if (valNumber < 0) {
-        // handling overtweet 
-        $(".error1").show();
-        return;
-      }
+    if (valNumber >= 140) {
+      // handling empty tweet
+      $(".error2").show();
+      return;
+    } else if (valNumber < 0) {
+      // handling overtweet
+      $(".error1").show();
+      return;
+    }
   
+    // turning form data to query string
+    const data = $("form").serialize();
 
-      // turning form data to query string 
-      const data = $("form").serialize();
-
-      $.ajax({
-        url: "/tweets",
-        method: "POST",
-        data: data
-      }).then((result) => {
-        loadTweets();
-        $("form")[0].reset();
-      })
-      
+    $.ajax({
+      url: "/tweets",
+      method: "POST",
+      data: data
+    }).then((result) => {
+      loadTweets();
+      $("form")[0].reset();
+    });
   });
 
-  const loadTweets = function () {
+  const loadTweets = function() {
     $.ajax("/tweets", { method: "GET"})
-    .then ((result) => {
-      renderTweets(result);
-    })
-  }
+      .then((result) => {
+        renderTweets(result);
+      });
+  };
 
   loadTweets();
-
-
 
 });
 
