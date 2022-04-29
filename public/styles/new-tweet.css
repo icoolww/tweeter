@@ -107,9 +107,19 @@ footer {
     display: flex;
     flex-direction: row;
   }
-  /* .overlay {
-    background-color: #007ede;
-  } */
 }
 
+  
+  @media only screen and (max-width: 768px) {
+  .overlay {
+  background-color: #007ede;
+  background-image: unset; 
+  margin: unset;
+  }
 
+  .image-name{
+    margin: unset;
+  }
+
+
+}
