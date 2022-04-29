@@ -1,3 +1,11 @@
+## Screenshots
+
+![Screenshot1](https://github.com/icoolww/tweeter/blob/master/docs/tweet-box1.png)
+![Screenshot2](https://github.com/icoolww/tweeter/blob/master/docs/tweet-box2.png)
+![Screenshot3](https://github.com/icoolww/tweeter/blob/master/docs/tweet-box3.png)
+
+
+
 # Tweeter Project
 
 Tweeter is a simple, single-page Twitter clone.
